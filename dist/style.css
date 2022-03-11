@@ -1,0 +1,285 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+canvas {
+  position: block;
+  width: 100%;
+  height: 100%;
+}
+
+.light i{
+  font-size:5px;
+}
+
+a {
+  color:darkorchid;
+}
+
+a:hover{
+  color:darkorange;
+  text-decoration: none;
+}
+
+.projects img{
+  width: 80%;
+}
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+  
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 80vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 100px 0px;
+  background-size: cover;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h2, h3, blockquote{
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+}
+
+
+h1 {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+}
+
+.aspro{
+  font-size:40px;
+}
+
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+    width:100%;
+  }
+
+  @media only screen and (max-width: 1151px) {
+
+    :root{
+      --dark-bg: rgba(15, 15, 15, 0.95);
+      --spacing: 0px;
+      
+      font-family: brandon-grotesque, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    main {
+      padding: 0px 0px;
+      
+      display:inline;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    header {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      background-color:rgba(15, 15, 15, 0.515);
+    }
+
+    .manifesto {
+      background: var(--dark-bg);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: var(--spacing);
+    }
+
+
+    .light img{
+      width: 20px;
+      height: 20px;
+    }
+
+    .projects{
+      background: var(--dark-bg);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: var(--spacing);
+    }
+
+    .left{
+      background: var(--dark-bg);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: var(--spacing);
+      margin-left: 0;
+    }
+
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1.5;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+
+* {
+  font-family: Coolvetica;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+
+header .main_content{
+  width: 30%;
+  height: 30%;
+  margin-left: 200px;
+  background:#ffffff;
+}
+
+header .main_content::after {
+  color: #fff;
+  content: attr(data-bg-text);
+  font-size: 80px;
+  line-height: 1;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+}
+
+header .main_content #canvas1{
+    position: absolute;
+    top: 0;
+    left: 600px;
+    width: 600px;
+    height: 600px;
+    z-index: -10;
+    background: black;
+}
+
+header .main_content .main_header{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 100px;
+  font-size:100px;
+  color: white;
+}
+
+header .main_content .main_header::before,
+header .main_content .main_header::after{
+  content: '';
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.main_content .main_header::before{
+  background:teal;
+  animation: typewriter 4s ease forwards;
+}
+
+@keyframes typewriter{
+  to { 
+    left:100%;
+  }
+}
+
+header .main_content .second_header{
+  position: absolute;
+  margin-top:500px;
+  margin-left:100px;
+  font-size:30px;
+  font-weight: 100;
+  color: white;
+  font-family: 'Roboto';
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0);
+  animation: light 1.5s ease-in-out infinite alternate;
+}
+
+header .main_content .second_header p{
+  color: grey;
+  font-family: La-Belle-Aurore;
+  font-size: 20px;
+}
+
+header .main_content h2{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header .main_content h2 span{
+  position: relative;
+  display: inline-block;
+  animation: animate 3.4s linear;
+}
+
+header .main_content h2 span:before{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  animation: spanBorder 3.4s linear;
+}
+
+header .main_content .paragraph_1{
+  position: absolute;
+  color: grey;
+  font-family: La-Belle-Aurore;
+  font-size: 18px;
+  margin-left: 80px;
+}
+
+.main_content .paragraph_2{
+  position: absolute;
+  color: grey;
+  font-family: La-Belle-Aurore;
+  top:30px;
+  left:290px;
+  font-size: 18px;
+}
